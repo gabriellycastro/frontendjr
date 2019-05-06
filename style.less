@@ -1,0 +1,302 @@
+/* RESET */
+* {margin: 0; padding: 0; border: none; outline: none; font-size: 100%; font-weight: 400; box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; background-color: #fff;}
+
+a {text-decoration: none;}
+ul {list-style: none;}
+img {max-width: 100%;}
+.linkBold {font-weight: @bold;}
+.linkBolder {font-weight: @bolder;}
+
+@font-color: #040503;
+
+@bold: 700;
+@bolder: 900;
+@border: 1px solid #000;
+@borderform: 1px solid #868f94;
+@bordertop: 3px solid #000;
+@bgcolor: #f0f0f0;
+@pad: 10px;
+
+.button {font-size: 14px; text-transform: uppercase; padding: @pad; margin: 5px; border: @border;}
+.form {margin: @pad; border: @borderform; height: 30px;}
+
+/* HEADER */
+#header {width: 100%; padding: 2%; float: left; border-top: @bordertop; letter-spacing: 2.49px;
+.icons {height: 56px; float: left;
+    img {float: left; padding: 20px 10px 20px 20px;}
+}
+.btnMenu {width: 56px; height: 56px; float: right; text-align: center; border: 0;
+    background-color: #fff; cursor: pointer;}
+}
+
+.logo {display: none;}
+
+
+/* MENU */
+.menu {
+    display: none; width: 100%; height: 100%; position: fixed; top: 0; left: 0;
+    ul {width: 100%; float: left; text-align: center;}
+    li {padding: 7px;
+        a {color: @font-color; font-size: 14px; text-transform: uppercase;}
+    }
+}
+
+/* BANNER */
+.banner {width: 100%;}
+
+/* INFORMAÇÕES SOBRE A COMPRA */
+#infoShopping {width: 100%; padding: @pad; color: #3c3c3c; 
+    .item {
+        margin: 3%; width: 100%; height: 50px; text-align: left;
+        img {width: 60px; float: left; padding: 10px;}
+        h2 {text-transform: uppercase; font-weight: @bolder; font-size: 14px;}
+        p {font-size: 12px;}
+        .text {padding: 10px;}
+    }
+}
+
+/* SESSÃO CONFIRA */
+#confira {width: 100%; padding: @pad; color: @font-color; text-align: center;
+    .item {margin-top: 30px;
+        img {width: 100%;}
+        h2 {text-transform: uppercase; letter-spacing: 2px; padding: 5px;}
+        button {.button();}
+    }
+    .item:first-child {margin-top: 0;}
+}
+
+/* MARCAS */
+#logos {width: 100%; padding: @pad; 
+    .item {width: 50%; height: 60px; float: left; padding: @pad;}
+}
+
+/* NOVIDADES */
+#novidades {width: 100%; padding: @pad; float: left;
+        h2 {text-transform: uppercase; font-size: 22px; letter-spacing: 7px; margin: 15px 0;}
+        .links {
+            h3 {text-transform: capitalize; font-size: 14px; border-bottom: @borderform;
+                padding: 0 @pad; color: @font-color; float: left;}
+        }
+}
+
+#novidadesImg {width: 100%; padding: @pad;
+    .item {width: 33%; float: left; padding: 3%;
+        figcaption {
+        del {color: #868f94;}
+        b {font-weight: @bold;}
+        }
+    }
+}
+
+/* SESSÃO COMPRAR */
+#comprar {width: 100%; padding: @pad;
+    .item {padding: @pad;
+    img {width: 100%;}
+    }
+}
+
+/* SOBRE A INTIMA STORE */
+#sobre {width: 100%; padding: @pad; border-bottom: @borderform;
+    h2 {text-transform: uppercase; font-size: 18px; font-weight: @bold; width: 100%;}
+    p {margin-top: @pad; color: #5f5f5f; font-size: 12px; line-height: 24px;}
+    .receba {width: 100%; background-color: @bgcolor; padding: 20px 2%; margin: 30px 0;
+        h3 {text-transform: uppercase; text-align: center; font-size: 18px; background-color: @bgcolor;
+        b {font-weight: @bolder; background-color: @bgcolor;}
+        }
+        form {.form(); font-size: 12px;
+        input {padding: 7px; float: left;}
+        button {float: right; width: 100px; height: 28px; padding: 5px; text-transform: uppercase; background-color: #000; color: #fff;}
+        }
+    }
+}
+
+/* CATEGORIAS */
+.titulo {text-transform: uppercase; font-size: 14px; font-weight: @bold; margin: 15px 0;}
+.pagense {width: 100%; padding: @pad; float: left;}
+.col {height: 90px; float: left;
+    a {font-size: 12px; color: @font-color}
+}
+
+#categorias {
+    #marcas {width: 100%; padding: @pad;
+        h2 {.titulo();}
+        .coluna {.col(); width: 100px;}
+    }
+    #top {width: 100%; padding: @pad; float: left;
+        h2 {.titulo();}
+        .coluna {.col(); width: 200px;}
+    }
+    #glossario {width: 100%; padding: @pad; float: left; border-bottom: @borderform;
+        h2 {.titulo();}
+        a {font-size: 12px; color: @font-color; float: left; padding-right: 10px; height: 20px;}
+    }
+    #navegacao {width: 48%; padding: @pad; float: left;
+        h2 {.titulo();}
+        .coluna {.col(); width: 100px;}
+    }
+    #ajuda {width: 48%; padding: @pad; float: left;
+        h2 {.titulo();}
+        .coluna {.col(); width: 100px;}
+    }
+    #pagamentos, #ent-seg {.pagense();
+        h2 {.titulo();}
+    }
+    #socialLinks {width: 100%; padding: @pad; float: left;
+        button {font-size: 20px; font-weight: @bolder; letter-spacing: 7px; text-transform: uppercase;
+            padding: 17px; margin: @pad; border: @border;}
+        figure {margin: @pad;
+        img {padding: 8px;} 
+        }
+    }
+}
+
+/* FOOTER */
+footer {width: 100%; padding: @pad;
+    .texto {float: left; font-size: 12px; color: @font-color; margin: 15px 0;}
+    .vtex-econverse {
+        img {float: left; padding: @pad;}
+    }
+}
+
+/* ====== MEDIA QUERIES ====== */
+	
+	/* TABLET */
+	@media screen and (min-width: 768px) {
+    
+    @pad: 25px;
+    .pagense {width: 33%;}
+
+        /* INFORMAÇÕES SOBRE A COMPRA */
+        #infoShopping {margin: 20px 0 70px 0;
+            .item {width: 25%; float: left; margin: 0;}
+        }
+
+        /* SESSÃO CONFIRA */
+        #confira {padding: 0 @pad;
+            .item {margin-top: 0; float: left; width: 33%;
+                img {padding: 10px;}
+            }
+        }
+
+        /* MARCAS */
+        #logos {
+            .item {width: 14%; }
+        }
+
+        /* NOVIDADES */
+        #novidades {padding: @pad;
+            h2 {float: left;}
+            .links {float: right; 
+            h3 {margin: 15px 0;}
+            }
+        }
+
+        #novidadesImg {width: 100%; padding: @pad;
+            .item {width: 33%; float: left; padding: 3%;
+                figcaption {
+                del {color: #868f94;}
+                b {font-weight: @bold;}
+                }
+            }
+        }
+
+        /* SESSÃO COMPRAR */
+        #comprar {padding: 0 @pad;
+            .item {float: left; width: 50%; margin: 0;
+            img {padding: 10px;}
+            }
+        }
+
+        /* SOBRE A INTIMA STORE */
+        #sobre {padding: 0 5%;}
+        .form {margin: 0;}
+
+        #sobre {float: left; 
+            h2 {font-size: 22px; font-weight: 400; letter-spacing: 7px;}
+            form {.form();}
+        }
+
+        /* CATEGORIAS */
+
+        #categorias {
+            #marcas {width: 50%; float: left;}
+            #top {width: 50%;
+                h2 {.titulo();}
+                .coluna {.col(); width: 170px;}
+            }
+
+            #glossario {
+                h2 {float: left; padding-right: 30px;}
+                .letters {margin: 15px 0;}
+            }
+        
+            #pagamentos, #ent-seg {.pagense(); margin-top: 30px;}
+
+            #socialLinks {width: 30%; margin-top: 30px;}
+        }
+
+        /* FOOTER */
+        footer {
+            .texto {float: left; font-size: 12px; color: @font-color; margin: 15px 0; width: 70%;}
+            .vtex-econverse {float: right; width: 30%;}
+        }
+    }
+    /* DESKTOP */
+	@media screen and (min-width: 1024px){
+
+        .pagense {width: 28%;}
+
+        /* HEADER */
+        #header {padding: 1%; height: 145px;
+            .icons {position: absolute; top: 18px; right: 170px; height: 20px;
+                img {padding-top: 0;}
+        }
+        .btnMenu, .btnClose {display: none;}
+        .logo {display: inline; position: absolute; top: 20px; left: 37%;}
+        
+        }
+
+        /* MENU */
+        .menu {width: 100%; display: block; position: static; 
+            ul {padding: 0 30px;}
+            li {padding: 0 12px; float: left; margin-top: 90px;
+               .navupright {position: absolute; top: 20px; right: 20px;}
+               .navupleft {position: absolute; top: 20px; left: 20px;}
+               .navupleft1 {position: absolute; top: 20px; left: 150px;}
+
+               a {font-size: 12px;}
+                }
+            }
+
+        /* CATEGORIAS */
+
+        #categorias { padding: 0 20px;
+            #marcas {width: 54%; float: left;
+                .coluna {.col(); width: 102px;}
+            }
+            #top {width: 46%;
+                h2 {.titulo();}
+                .coluna {.col(); width: 144px;}
+            }
+            #navegacao {width: 12%; padding: @pad; float: left;
+                h2 {.titulo();}
+                .coluna {.col(); width: 100px;}
+            }
+            #ajuda {width: 12%; padding: @pad; float: left;
+                h2 {.titulo();}
+                .coluna {.col(); width: 100px;}
+            }
+        
+            #pagamentos, #ent-seg {.pagense(); margin-top: 0;}
+
+            #socialLinks {width: 20%; margin-top: 0;}
+        }
+
+        /* FOOTER */
+        footer {padding: 0 40px;
+            .texto {width: 75%;}
+            .vtex-econverse {width: 25%;}
+            }
+    }
+
